@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
 app.post('/sendMessage', function(req, res) {
   client.messages.create({
 		body: req.body.reminder_message,
-		to: '+17655865847',  // Text this number
+		to: '+1' + req.body.phone_number,  // Text this number
 		from: '+14158181712 ' // From a valid Twilio number
 	})
 	.then((message) => console.log(message.sid))
