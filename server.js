@@ -9,7 +9,8 @@ const authToken = ''
 
 const client = new twilio(accountSid, authToken)
 
-app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(express.static(__dirname));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html')
