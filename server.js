@@ -10,8 +10,8 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
-const accountSid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'; // insert Account SID here
-const authToken = 'your_auth_token';   // insert auth token here
+const accountSid = 'AC1825baa6715668cc7ca186d32a1b57c7'; // insert Account SID here
+const authToken = '';   // insert auth token here
 
 const client = new twilio(accountSid, authToken);
 
