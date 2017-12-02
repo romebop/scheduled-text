@@ -36,7 +36,7 @@
         <p class="lead">You can do this.</p>
       </div>
 
-      <form>
+      <form action="http://127.0.0.1:3000/sendMessage" method="post">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" class="form-control" id="name" placeholder="Enter name">
@@ -45,6 +45,11 @@
         <div class="form-group">
           <label for="number">Number</label>
           <input type="number" class="form-control" id="number" placeholder="Enter a phone number to send to">
+        </div>
+
+        <div class="form-group">
+          <label for="reminder_message">Reminder message</label>
+          <input type="reminder_message" class="form-control" name="reminder_message" id="reminder_message" placeholder="Enter the reminder message">
         </div>
 
         <hr/>
@@ -58,7 +63,7 @@
               </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Send</button>
+        <button type="submit" class="btn btn-primary" onsubmit="">Send</button>
       </form>
 
       <br/>
